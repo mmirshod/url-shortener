@@ -7,5 +7,4 @@ SQLAlchemy==2.0.19
 uvicorn==0.23.1
 validators==0.20.0
 aiogram~=2.25.1
-starlette==0.30.0
 requests~=2.31.0
