@@ -85,6 +85,7 @@ async def deactivate(message: types.Message):
 
 async def on_startup(dp):
     await bot.set_webhook(WEBHOOK_URL)
+    print("start...")
 
 
 async def on_shutdown(dp):
