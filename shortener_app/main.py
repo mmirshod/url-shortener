@@ -85,6 +85,4 @@ def delete_url(secret_key: str, request: Request, db: Session = Depends(get_db))
         message = f"Successfully deleted shortened URL for {db_url.target_url}"
         return {"detail": message}
     else:
-        raise_not_found()
-
-
+        raise_not_found(request=request)
